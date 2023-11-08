@@ -13,6 +13,11 @@ function Navbar() {
               test
             </Link>
           </li>
+          <li>
+            <Link to="/profile" className="text-white">
+              Profile Form
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,8 +1,10 @@
 import "./App.css";
-import Test from "./components/Test";
-import HomePage from "./components/homepage/HomePage";
+
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProfilForm from "./components/profileFormPage/ProfilForm";
+import Footer from "./components/footer/footer";
+import HomePage from "./homepage/HomePage";
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/profile" element={<ProfilForm />} />
         </Routes>
+        <Footer />
       </>
     </BrowserRouter>
   );
